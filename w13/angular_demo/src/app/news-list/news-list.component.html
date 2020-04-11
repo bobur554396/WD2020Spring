@@ -1,0 +1,4 @@
+<div *ngFor="let category of categories">
+  <a [routerLink]="'/category/' + category.id">{{ category.name }}</a>
+  <button (click)="deleteCategory(category.id)">Delete</button>
+</div>
